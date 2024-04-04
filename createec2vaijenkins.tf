@@ -16,7 +16,7 @@ provider "aws" {
 
 #Create EC2 Instance
 resource "aws_instance" "EC2-via-jenkins" {
-  ami                    = "ami-0b08bfc6ff7069aff"
+  ami                    = "ami-0395649fbe870727e"
   instance_type          = "t2.micro"
   key_name = "for-k"
   vpc_security_group_ids = [aws_security_group.jenkins_sg27.id]
