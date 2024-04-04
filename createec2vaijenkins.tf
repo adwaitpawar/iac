@@ -8,8 +8,8 @@ terraform {
 }
 provider "aws" {
   region     = "us-west-2"
-   access_key = "AKIAT2TG4JQ2GBKVHLEV"
-  secret_key = "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"
+   access_key = "AKIAVRUVP4MMVW22P5NL"
+  secret_key = "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"
 }
 
 
@@ -18,7 +18,7 @@ provider "aws" {
 resource "aws_instance" "EC2-via-jenkins" {
   ami                    = "ami-0395649fbe870727e"
   instance_type          = "t2.micro"
-  key_name = "for-k"
+  key_name = "kulture"
   vpc_security_group_ids = [aws_security_group.jenkins_sg27.id]
   tags = {
     Name = "EC2-via-jenkins"
